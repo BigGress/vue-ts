@@ -19,7 +19,6 @@ export default {
 
 <style lang="scss">
 .Item {
-    // overflow: hidden;
     list-style: none;
     min-height: 48px;
     background: #fff;

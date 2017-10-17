@@ -7,7 +7,7 @@ module.exports = {
     resolve: {
         extensions: [".ts", ".js", ".vue", ".scss"],
         alias: {
-          vue: 'vue/dist/vue.js'
+            vue: 'vue/dist/vue.js'
         }
     },
     output: {
@@ -15,26 +15,25 @@ module.exports = {
         path: path.resolve(__dirname, "../dist"),
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.vue$/,
                 use: [{
                     loader: "vue-loader",
                     options: {
                         scss: 'vue-style-loader!css-loader!sass-loader',
                         sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax',
-                        ts:  [{
+                        ts: [{
                             loader: 'ts-loader',
                         }]
                     }
                 }]
             },
-            {        
+            {
                 test: /\.ts$/,
                 exclude: /node_modules|vue\/src/,
                 loader: 'ts-loader',
                 options: {
-                  appendTsSuffixTo: [/\.vue$/]
+                    appendTsSuffixTo: [/\.vue$/]
                 }
             },
             {
@@ -58,16 +57,16 @@ module.exports = {
                 })
             },
             {
-              test: /\.(eot|woff|ttf|woff2)$/,
-              exclude: [
-                path.resolve(__dirname, "node_module/webpack-material-design-icons")
-              ],
-              use: [{
-                loader: "file-loader",
-                options: {
-                  name: `[name].[ext]`,
-                }
-              }]
+                test: /\.(eot|woff|ttf|woff2)$/,
+                exclude: [
+                    path.resolve(__dirname, "node_module/webpack-material-design-icons")
+                ],
+                use: [{
+                    loader: "file-loader",
+                    options: {
+                        name: `[name].[ext]`,
+                    }
+                }]
             }
         ]
     },
@@ -79,7 +78,7 @@ module.exports = {
             hash: false,
         }),
         new ExtractTextPlugin({
-          filename: "styles/[name].[hash].css"
+            filename: "styles/[name].[hash].css"
         })
     ]
 }
