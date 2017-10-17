@@ -7,7 +7,7 @@ module.exports = {
     resolve: {
         extensions: [".ts", ".js", ".vue", ".scss"],
         alias: {
-            vue: 'vue/dist/vue.js'
+            vue: 'vue/dist/vue.js',
         }
     },
     output: {
@@ -77,8 +77,5 @@ module.exports = {
             inject: 'body',
             hash: false,
         }),
-        new ExtractTextPlugin({
-            filename: "styles/[name].[hash].css"
-        })
     ]
 }

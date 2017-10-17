@@ -19,6 +19,6 @@ module.exports = merge(common, {
         inline: true,
         host: "0.0.0.0",
         historyApiFallback: true,
-        contentBase: path.resolve(__dirname, './src'),
+        contentBase: path.resolve(__dirname, '../src'),
     }
 })
