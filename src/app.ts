@@ -5,6 +5,7 @@ import {components} from "./components"
 let a = new Vue({
   el: "#app",
   template: `<div>
+      <Logo />
       <List>
         <Item v-for="(item, index) in items"
               :key="index"
