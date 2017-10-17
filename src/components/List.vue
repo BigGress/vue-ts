@@ -16,3 +16,15 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+
+  .List {
+    ul {
+      overflow: hidden;
+      margin: 0;
+      padding: 1px;
+    }
+  }
+</style>
+

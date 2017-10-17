@@ -7,8 +7,10 @@ let a = new Vue({
   template: `<div>
       <List>
         <Item v-for="(item, index) in items"
-              :data="item"
-              :key="index"></Item>
+              :key="index"
+              :isFirst="index === 0">
+              {{item}}
+        </Item>
       </List>
   </div>`,
   data() {
@@ -18,5 +20,5 @@ let a = new Vue({
   },
   components: {
     ...components
-  }
+  },
 })
