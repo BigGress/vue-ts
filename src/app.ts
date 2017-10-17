@@ -1,8 +1,9 @@
 import Vue from 'vue';
 
+import { Routers } from "./router/index"
 import {components} from "./components"
 
-let a = new Vue({
+new Vue({
   el: "#app",
   template: `<div>
       <Logo />
@@ -13,13 +14,13 @@ let a = new Vue({
               {{item}}
         </Item>
       </List>
+      <router-view/>
   </div>`,
   data() {
     return {
       items: [1,2,3,4,5,6,7,8],
     }
   },
-  components: {
-    ...components
-  },
+  router: Routers,
+  components
 })

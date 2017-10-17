@@ -12,10 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^2.5.3",
-    "vue": "^2.5.2"
+    "vue": "^2.5.2",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
+    "typescript": "^2.5.3",
+    "@types/vue": "^2.0.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "copy-webpack-plugin": "^4.1.1",
