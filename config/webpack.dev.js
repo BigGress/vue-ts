@@ -10,7 +10,7 @@ module.exports = merge(common, {
             // multiStep: false
         }),
         new webpack.DefinePlugin({
-            'process.env': "dev"
+            'process.env': "'dev'"
         }),
     ],
     devServer: {

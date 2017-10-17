@@ -21,11 +21,10 @@ module.exports = {
                 use: [{
                     loader: "vue-loader",
                     options: {
+                        scss: 'vue-style-loader!css-loader!sass-loader',
+                        sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax',
                         ts:  [{
-                            loader: 'babel-loader',
-                        }, {
                             loader: 'ts-loader',
-
                         }]
                     }
                 }]

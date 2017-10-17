@@ -19,7 +19,7 @@ module.exports = merge(common, {
             to: "assets"
         }]),
         new webpack.DefinePlugin({
-            'process.env': "prod"
+            'process.env': "'prod'"
         }),
     ]
 })
